@@ -1,0 +1,82 @@
+/*Единый контейнер*/
+.container {
+    padding: 0 130px 0  130px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
+
+/*Достопримечательности*/
+.showplace {
+    position: relative;
+}
+.showplace__title {
+    text-align: center;
+    font-family: Amatic SC;
+    font-weight: normal;
+    font-size: 36px;
+    padding-top: 60px;
+}
+.showplace__text {
+    position: relative;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-align: left;
+}
+.showplace__item {
+    width: 100%;
+    padding-top: 40px;
+}
+.showplace__item-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #585858;
+}
+.showplace__img-container{
+    border-radius: 50px;
+    overflow: hidden;
+    height: auto;
+}
+.showplace__img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .container {
+      padding: 0 16px 0  16px;
+      margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

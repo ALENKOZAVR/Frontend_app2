@@ -1,0 +1,79 @@
+/*Основные*/
+.body, html {
+margin: 0;
+min-width: 320px;
+font-size: 14px;
+scroll-behavior: smooth;
+scroll-padding-top: 90px;
+}
+.body.lock{
+overflow: hidden;
+}
+
+/*Контакты*/
+.contacts{
+display: block;
+}
+
+.contacts__text{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+}
+
+.contacts__text__title{
+position: relative;
+margin: 0 0 51 0;    
+font-family: Amatic SC;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 61px;
+text-align: center;
+}
+
+.contacts__text__1{
+position: relative;
+margin: 35px 31px 20px 70px;
+}
+
+.contacts__text__2{
+position: relative;
+margin: 0px 31px 0px 70px;
+}
+
+.contacts__text__3{
+position: relative;
+margin: 0px 31px 20px 70px;
+}
+
+.contacts__img{
+margin: 0 20px 0 32px;
+float: left;
+}
+
+.map{
+padding: 50px 0 115px 0;
+width: 100%;
+}
+
+
+/*Подвал*/
+.footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    width: 100%;
+    height: 84px;
+}
+.footer__text{
+    font-weight: normal;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 23px 57px 23px 16px;
+
+    color: #ffffff;
+}

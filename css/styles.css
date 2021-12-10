@@ -228,7 +228,10 @@ animation-direction: alternate;
     font-family: Amatic SC;
     font-weight: normal;
     font-size: 36px;
-    padding-top: 60px;
+    line-height: 45px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    
 }
   
 .showplace__text {
@@ -243,7 +246,7 @@ animation-direction: alternate;
   
 .showplace__item {
     width: 100%;
-    padding-top: 40px;
+    padding-top: 33px;
 }
   
 .showplace__item-title {
@@ -273,8 +276,10 @@ animation-direction: alternate;
     text-align: center;
     font-family: Amatic SC;
     font-weight: normal;
-    margin: 60px auto;
+    margin-top: 60px;
+    margin-bottom: 33px;
     font-size: 36px;
+    line-height: 45px;
 }
   
 .tours { 

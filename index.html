@@ -12,11 +12,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <script src="js/app.js"></script>
-    
 </head>
 
-
 <body class="body" id="body">
+    
+    <!-- Шапка -->
+    <header class="header" id="header">
+        <div class="header__logo"></div>
+        <button class="header__burger" type="button" id="bm" onclick="onClickMenu();">
+            <span></span>
+        </button>
+        <nav class="header__menu" id="hm">
+            <ul class="header__list">
+                <li>
+                    <a href="#section_1" class="header__link" onclick="onClickLink();">Главная</a>
+                </li>
+                <li>
+                    <a href="#section_2" class="header__link" onclick="onClickLink();">Достопримечательности</a>
+                </li>
+                <li>
+                    <a href="#section_3" class="header__link" onclick="onClickLink();">Туры</a>
+                </li>
+                <li>
+                    <a href="#section_4" class="header__link" onclick="onClickLink();">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная страница -->
+    <section class="wp" id="section_1">
+        <div class="wp__content">
+            <div class="wp__title">
+                <h1 class="wp__title__1">ХАКАСИЯ</h1>
+                <p class="wp__title__2">Туристическое Агенство Республики Хакасия</p>
+            </div>
+            <div>
+                <a href="#section_2" class="buttonNextContent"></a>
+            </div>
+        </div>
+    </section>
+  
     <!-- Контакты-->
     <section class="contacts" id="section_4">
         <div class="contacts__text">

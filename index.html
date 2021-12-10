@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<head>  
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@400;500&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Маслов Ф. А.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document1</title>
-</head>
-<body>
+    <title>Title</title>
+    <script src="js/app.js"></script>
     
+</head>
+
+
+<body class="body" id="body">
+    
+    <!-- Шапка -->
+    <header class="header" id="header">
+        <div class="header__logo"></div>
+        <button class="header__burger" type="button" id="bm" onclick="onClickMenu();">
+            <span></span>
+        </button>
+        <nav class="header__menu" id="hm">
+            <ul class="header__list">
+                <li>
+                    <a href="#section_1" class="header__link" onclick="onClickLink();">Главная</a>
+                </li>
+                <li>
+                    <a href="#section_2" class="header__link" onclick="onClickLink();">Достопримечательности</a>
+                </li>
+                <li>
+                    <a href="#section_3" class="header__link" onclick="onClickLink();">Туры</a>
+                </li>
+                <li>
+                    <a href="#section_4" class="header__link" onclick="onClickLink();">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная страница -->
+    <section class="wp" id="section_1">
+        <div class="wp__content">
+            <div class="wp__title">
+                <h1 class="wp__title__1">ХАКАСИЯ</h1>
+                <p class="wp__title__2">Туристическое Агенство Республики Хакасия</p>
+            </div>
+            <div>
+                <a href="#section_2" class="buttonNextContent"></a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

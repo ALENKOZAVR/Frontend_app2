@@ -1,3 +1,9 @@
+/*Единый контейнер*/
+.container {
+    padding: 0 130px 0  130px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
 /*Основные*/
 .body, html {
 margin: 0;
@@ -210,6 +216,165 @@ animation-direction: alternate;
         top: 98%;
     }
   
+
+/*Достопримечательности*/
+.showplace {
+    position: relative;
+}
+  
+.showplace__title {
+    text-align: center;
+    font-family: Amatic SC;
+    font-weight: normal;
+    font-size: 36px;
+    padding-top: 60px;
+}
+  
+.showplace__text {
+    position: relative;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-align: left;
+}
+  
+.showplace__item {
+    width: 100%;
+    padding-top: 40px;
+}
+  
+.showplace__item-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #585858;
+}
+  
+.showplace__img-container{
+    border-radius: 50px;
+    overflow: hidden;
+    height: auto;
+}
+  
+.showplace__img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*Туры*/
+.tours__title {
+    text-align: center;
+    font-family: Amatic SC;
+    font-weight: normal;
+    margin: 60px auto;
+    font-size: 36px;
+}
+  
+.tours { 
+    position: relative;
+}
+  
+.tours__item {
+    position: relative;
+    width: 100%;
+    margin: 30px 0 20px 0;
+}
+  
+.tours__item-img {
+    height: 100%;
+    width: 100%;
+}
+  
+.tours__item-gradient {
+    position: absolute;
+    height: 180px;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), color-stop(rgba(255, 255, 255, 0.67)), to(#eeeeee));
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0), rgba(255, 255, 255, 0.67), #eeeeee);
+    bottom: 0;
+    left: 0;
+    font-family: Roboto;
+    font-style: normal;
+}
+  
+.tours__item-title{
+    margin: 15px 25px;
+    font-weight: normal;
+    text-align: auto;
+    font-size: 18px;
+    line-height: 21px;
+}
+  
+.tours__item-text {
+    margin: 25px 25px 0 20px;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+  
+.tours__item-price {
+    margin: 25px 25px 0 20px;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: Roboto;
+    font-style: normal;
+}
+  
+.tours__item-button {
+    position: absolute;
+    padding: 5px 40px;
+    background: transparent;
+    color: #c3b182;
+    border: 1px solid #c3b182;
+    right: 25px;
+    bottom: 20px;
+}
+  
+.tours__item--hidden {
+    display: none;
+}
+ 
+.tours--all-hidden-visible .tours__item--hidden {
+    display: block;
+}
+  
+.btn--toggle-items {
+    border: 0;
+    background: transparent;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9F9F9F;
+}
+
+.tours__more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 35px 0 0 0;
+}
+
+/*Desktop-версия для контейнера*/
+@media (max-width: 767px) {
+    .container {
+      padding: 0 16px 0  16px;
+      margin: 0 auto;
+    }
+}
+
   
 /*Контакты*/
 .contacts{

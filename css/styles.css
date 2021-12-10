@@ -1,0 +1,280 @@
+/*Основные*/
+.body, html {
+margin: 0;
+min-width: 320px;
+font-size: 14px;
+scroll-behavior: smooth;
+scroll-padding-top: 90px;
+}
+.body.lock{
+overflow: hidden;
+}
+
+
+/*Шапка*/
+.header {
+transition: all 0.8s ease 0s;
+position: fixed;
+height: 90px;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 50;
+justify-content: space-between;
+}
+.header.scroll{
+    background-color: black;
+}
+
+.header__logo { 
+background-image: url(../img/logo.png);
+position: relative;
+width: 48px;
+height: 43px;
+left: 28px;
+top: 25px;
+z-index: 4;
+margin: 0;
+float: left;
+}
+
+.header__burger{
+    z-index: 5;
+    display: block;
+    position: relative;
+    top: 32px;
+    right: 32px;
+    width: 24px;
+    height: 16px;
+    
+    outline: none;
+    border: 0;
+    background: transparent;
+    float: right;
+
+}
+
+.header__burger span,
+.header__burger::before,
+.header__burger::after{
+    left: 0p;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    transition: all 0.8s ease 0s;
+    background-color: #ffffff;
+}
+.header__burger::before,
+.header__burger::after{
+    content: "";
+}
+.header__burger::before{
+    top: 0;
+}
+.header__burger::after{
+    bottom: 0;
+}
+.header__burger span{
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+}
+
+.header__burger.active{
+    top: 90vh;
+    transition: all 0.85s ease 0s;
+}
+.header__burger.active span{
+    transform: scale(0) translate(0px, -50%);
+}
+.header__burger.active::after{
+    top: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+}
+.header__burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.header__menu{
+position: fixed;
+top: -100%;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(17, 17, 17, 0.8);
+padding: 0px 0px 0px;
+transition: all 0.8s ease 0s;
+
+}
+.header__menu.active{
+top: 0;
+}
+
+.header__list{
+flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 0 0 0;
+margin: auto 0;
+height: 100%;
+    
+}
+.header__list li{
+list-style: none;
+margin: 0px 0px 25px 0px;
+}
+
+.header__link{
+color: #ffffff;
+font-size: 14px;
+font-family: Roboto;
+line-height: 16px;
+text-decoration: none;
+}
+
+
+/*Главная страница*/
+.wp{
+background-image: url(../img/bg.jpg);
+background-position: center,center;
+background-size: cover,cover;
+height: 100vh;
+text-align: center;
+}
+
+.wp__content {
+height: 100vh;
+position: relative;
+background-size: cover;
+}
+
+.wp__title{
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+-webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+.wp__title__1{
+margin: 0;
+font-family: Amatic SC;
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 121px;
+color: rgba(255, 255, 255, 0.8);
+}
+
+.wp__title__2{
+margin: 0;
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+color: rgba(255, 255, 255, 0.5);
+padding-top: 0;
+}
+
+/*Кнопка к следющему разделу*/
+.buttonNextContent{
+background-image: url(../img/next.png);
+height: 23px;
+width: 46px;
+background-size: cover;
+position: absolute;
+background-color: transparent;
+border: none;
+bottom: 0;
+transform: translate(-50%, -50%);
+
+animation-name: nextButton;
+animation-duration: 0.65s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes nextButton{
+    0%{
+        top: 96%;
+    }
+    50%{
+        top: 97%;
+    }
+    100%{
+        top: 98%;
+    }
+  
+  
+/*Контакты*/
+.contacts{
+display: block;
+}
+
+.contacts__text{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+}
+
+.contacts__text__title{
+position: relative;
+margin: 0 0 51 0;    
+font-family: Amatic SC;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 61px;
+text-align: center;
+}
+
+.contacts__text__1{
+position: relative;
+margin: 35px 31px 20px 70px;
+}
+
+.contacts__text__2{
+position: relative;
+margin: 0px 31px 0px 70px;
+}
+
+.contacts__text__3{
+position: relative;
+margin: 0px 31px 20px 70px;
+}
+
+.contacts__img{
+margin: 0 20px 0 32px;
+float: left;
+}
+
+.map{
+padding: 50px 0 115px 0;
+width: 100%;
+}
+
+
+/*Подвал*/
+.footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    width: 100%;
+    height: 84px;
+}
+.footer__text{
+    font-weight: normal;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 23px 57px 23px 16px;
+
+    color: #ffffff;
+}

@@ -7,12 +7,13 @@ function onClickMenu(){
 
 //Затемнение шапки
 window.onscroll = function (){
-    if(window.pageYOffset >= 100){
-        document.getElementById('header').classList.add('scroll');
-    }
-    else if (window.pageYOffset < 100) {
-        document.getElementById('header').classList.remove('scroll');
-    }
+const header = document.getElementById('header')
+  if(window.pageYOffset >= 100){
+    header.classList.add('scroll');
+  }
+  else if (window.pageYOffset < 100) {
+    header.classList.remove('scroll');
+  }
 }
 
 //Закрытие меню при переходе по ссылке

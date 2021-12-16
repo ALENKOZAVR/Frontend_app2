@@ -266,6 +266,7 @@ animation-direction: alternate;
 }
   
 .showplace__img{
+    position: relative;
     width: 100%;
     height: auto;
 }
@@ -421,9 +422,27 @@ position: relative;
 margin: 0px 31px 20px 70px;
 }
 
-.contacts__img{
+.contacts__img-adres{
 margin: 0 20px 0 32px;
 float: left;
+background-image: url(../img/adres.png);
+width: 14px;
+height: 20px;
+}
+.contacts__img-phon{
+margin: 0 20px 0 32px;
+float: left;
+background-image: url(../img/phon.png);
+width: 18px;
+height: 18px;
+}
+
+.contacts__img-mail{
+margin: 0 20px 0 31px;
+float: left;
+background-image: url(../img/mail.png);
+width: 20px;
+height: 20px;
 }
 
 .map{

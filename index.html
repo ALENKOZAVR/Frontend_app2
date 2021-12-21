@@ -15,37 +15,41 @@
     
     <!-- Шапка -->
     <header class="header" id="header">
-        <a href="#section_1" class="header__logo"></a>
-        <button class="header__burger" type="button" id="bm" onclick="onClickMenu();">
-            <span></span>
-        </button>
-        <nav class="header__menu" id="hm">
-            <ul class="header__list">
-                <li>
-                    <a href="#section_1" class="header__link" onclick="onClickLink();">Главная</a>
-                </li>
-                <li>
-                    <a href="#section_2" class="header__link" onclick="onClickLink();">Достопримечательности</a>
-                </li>
-                <li>
-                    <a href="#section_3" class="header__link" onclick="onClickLink();">Туры</a>
-                </li>
-                <li>
-                    <a href="#section_4" class="header__link" onclick="onClickLink();">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container1">
+            <a href="#section_1" class="header__logo"></a>
+            <button class="header__burger" type="button" id="bm" onclick="onClickMenu();">
+                <span></span>
+            </button>
+            <nav class="header__menu" id="hm">
+                <ul class="header__list">
+                    <li>
+                      <a href="#section_1" class="header__link" onclick="onClickLink();">Главная</a>
+                   </li>
+                    <li>
+                        <a href="#section_2" class="header__link" onclick="onClickLink();">Достопримечательности</a>
+                    </li>
+                    <li>
+                        <a href="#section_3" class="header__link" onclick="onClickLink();">Туры</a>
+                    </li>
+                    <li>
+                        <a href="#section_4" class="header__link" onclick="onClickLink();">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Главная страница -->
     <section class="wp" id="section_1">
-        <div class="wp__content">
-            <div class="wp__title">
-                <h1 class="wp__title__1">ХАКАСИЯ</h1>
-                <p class="wp__title__2">Туристическое Агенство Республики Хакасия</p>
-            </div>
-            <div>
-                <a href="#section_2" class="buttonNextContent"></a>
+        <div class="container1">
+            <div class="wp__content">
+                <div class="wp__title">
+                    <h1 class="wp__title__1">ХАКАСИЯ</h1>
+                    <p class="wp__title__2">Туристическое Агенство Республики Хакасия</p>
+                </div>
+                <div>
+                    <a href="#section_2" class="buttonNextContent"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -132,32 +136,39 @@
 
     <!-- Контакты-->
     <section class="contacts" id="section_4">
-        <div class="contacts__text">
-            <h2 class="contacts__text__title">Контакты</h2>
-        </div>
-        <div class="contacts__text">
-            <div class="contacts__img-adres"></div>
-            <p class="contacts__text__1">655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67</p>
-        </div>
-        <div class="contacts__text">
-            <div class="contacts__img-phon"></div>
-            <p class="contacts__text__2">8 (3902) 22-53-35</p> 
-            <p class="contacts__text__3">8 (3902) 24-30-71</p>
-        </div>
-        <div class="contacts__text">
-            <div class="contacts__img-mail"></div>
-            <p class="contacts__text__3">kancler@vskhakasia.ru</p>
-        </div>
-        <div class="map">
-            <div style="position:relative;overflow:hidden;">
-                <a href="https://yandex.ru/maps/1095/abakan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Абакан</a><a href="https://yandex.ru/maps/1095/abakan/house/prospekt_lenina_67/bUgYcgNiS0cBQFtpfXtzcHpnZg==/?ll=91.444583%2C53.721019&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=16.99" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Ленина, 67 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUub8Q5pB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        <div class="container1">
+            <div class="contacts__text">
+                <h2 class="contacts__text__title">Контакты</h2>
+            </div>
+            <div class="container2">    
+                <div class="contacts__text">
+                    <div class="contacts__img-adres"></div>
+                    <p class="contacts__text__1">655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67</p>
+                </div>
+                <div class="contacts__text">
+                    <div class="contacts__img-phon"></div>
+                    <p class="contacts__text__2">8 (3902) 22-53-35</p> 
+                    <p class="contacts__text__3">8 (3902) 24-30-71</p>
+                </div>
+                <div class="contacts__text">
+                    <div class="contacts__img-mail"></div>
+                    <p class="contacts__text__3">kancler@vskhakasia.ru</p>
+                </div>
+            </div>
+            <div class="map">
+                <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/1095/abakan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Абакан</a><a href="https://yandex.ru/maps/1095/abakan/house/prospekt_lenina_67/bUgYcgNiS0cBQFtpfXtzcHpnZg==/?ll=91.444583%2C53.721019&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=16.99" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Ленина, 67 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUub8Q5pB" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Подвал -->
     <footer class="footer">
-        <p class="footer__text">Официальный сайт Агенства Туризма Республики Хакасия © 2021</p>
+        <!--добавить контейнер в котором будет доп инфа, через css скрыть его.-->
+        <div class="container1">
+            <p class="footer__text">Официальный сайт Агенства Туризма Республики Хакасия © 2021</p>
+        </div>
     </footer>
 </body>
 </html>

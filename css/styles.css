@@ -230,7 +230,7 @@ animation-direction: alternate;
     line-height: 45px;
     margin-top: 60px;
     margin-bottom: 0;
-    
+
 }
   
 .showplace__text {
@@ -241,6 +241,9 @@ animation-direction: alternate;
     line-height: 16px;
     color: #000000;
     text-align: left;
+}
+.showplace__text2{
+    display: none;
 }
   
 .showplace__item {
@@ -259,7 +262,15 @@ animation-direction: alternate;
 }
   
 .showplace__img-container{
-    border-radius: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: auto;
+}
+.showplace__img-container-right{
+    display: none;
+}
+.showplace__img-container-mobile{
+    border-radius: 20px;
     overflow: hidden;
     height: auto;
 }
@@ -622,22 +633,72 @@ width: 100%;
     color: #fff;
     }
 
+    /*Достопримечательности*/
+    .showplace{
+        background-color: #E5E5E5;
+        display: block;
+        position: static;
+        height: 1319px;
+    }
+    .showplace__title{
+        margin-top: 0;
+        padding-top: 111px;
+        padding-bottom: 15px;
+    }
 
+    .showplace__item {
+        display: flex;
+        position: static;
+        height: 297px;
+        padding-top: 50px;
+    }
+
+    .showplace__img-container{
+        width: 380px;
+        height: 297px;
+        overflow: visible;
+    }
+
+    .showplace__img-container-mobile{
+        display: none;
+    }
+    .showplace__img-container-right{
+        display: flex;
+        width: 380px;
+        height: 297px;
+        overflow: visible;
+    }
     
-   
+    .showplace__img{
+        width: 380px;
+        height: 297px;
+        border-radius: 20px;
+        float: left;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .showplace-contener-content{
+        width: auto;
+        overflow: auto;
+        padding-left: 20px;
+    }
     
+    .showplace__item-title{
+        margin: 0;
+    }
 
+    .showplace__text{
+        margin: 24px 100px 0px 0px;
+    }
+    
+    .showplace__text2{
+        display: flex;
+        margin: 16px 100px 0px 0px;
+        position: relative;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        text-align: left;
+    }
 }

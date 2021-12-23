@@ -467,6 +467,12 @@ width: 100%;
 
     color: #ffffff;
 }
+
+.footer__desktop{
+    display: none;
+}
+
+
 @media(min-width: 768px){
     /*Основные*/
     .container1{
@@ -506,20 +512,132 @@ width: 100%;
     }
 
     /*Контакты*/
+    .contacts{
+        background-color: #E5E5E5;
+    }
     .container2{
-    width: 566px;
+    width: 35%;
     float: left;
     }
 
     .contacts__text__title{
-        margin: 68px 0px 0px 0px;
+        padding-top: 68px;
+        margin: 0;
     }
 
     .contacts__text__1{
         margin: 68px 31px 20px 70px;
     }
+    .contacts__text__3{
+        overflow: auto;
+    }
    
     .map{
     padding: 30px 0 70px 0;
     }
+
+
+    /*Подвал*/
+    .footer{
+        height: 271px;
+        display: block;
+    }
+    .footer__mobile{
+        display: none;
+    }
+    .footer__desktop{
+        display: flex;
+    }
+    .footer__text{
+    font-weight: 700;
+    margin: 35px 0px 21px 0px;
+    }
+
+    /*Меню подвала*/
+    .footer_conteiner_menu{
+        
+        height: 271px;
+        width: 201px;
+        
+    }
+
+    .footer__menu__list{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer__menu__list li{
+        list-style: none;
+        margin: 0px 42px 10px 0px;
+    }
+
+    .footer__menu__link{
+        color: #ffffff;
+        font-size: 14px;
+        font-family: Roboto;
+        line-height: 16px;
+        text-decoration: none;
+        font-weight: 200;
+    }
+
+    .footer__menu__link:hover{
+        padding-bottom: 3px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    /*Контакты подвала*/
+    .footer_conteiner_contacts{
+        height: 271px;
+        width: 50%;
+        overflow: auto;
+    }
+    .footer__text2{
+    font-weight: normal;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0px 100px 0px 0px;
+    
+
+    color: #e1e1e1;
+    }
+
+    /*Инфо подвала*/
+    .footer_conteiner_info{
+        height: 271px;
+        width: 50%;
+        
+
+    }
+    .footer__text3{
+    font-weight: normal;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 35px 0px 0px 0px;
+    float: right;
+
+    color: #fff;
+    }
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 }

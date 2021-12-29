@@ -57,7 +57,6 @@ float: left;
     border: 0;
     background: transparent;
     float: right;
-
 }
 
 .header__burger span,
@@ -231,7 +230,7 @@ animation-direction: alternate;
     line-height: 45px;
     margin-top: 60px;
     margin-bottom: 0;
-    
+
 }
   
 .showplace__text {
@@ -242,6 +241,9 @@ animation-direction: alternate;
     line-height: 16px;
     color: #000000;
     text-align: left;
+}
+.showplace__text2{
+    display: none;
 }
   
 .showplace__item {
@@ -260,7 +262,15 @@ animation-direction: alternate;
 }
   
 .showplace__img-container{
-    border-radius: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: auto;
+}
+.showplace__img-container-right{
+    display: none;
+}
+.showplace__img-container-mobile{
+    border-radius: 20px;
     overflow: hidden;
     height: auto;
 }
@@ -467,4 +477,272 @@ width: 100%;
     margin: 23px 57px 23px 16px;
 
     color: #ffffff;
+}
+
+.footer__desktop{
+    display: none;
+}
+
+
+@media(min-width: 768px){
+    /*Основные*/
+    .container1{
+    max-width: 1440px;
+    padding: 0 130px 0  130px;
+    margin: 0 auto;
+    }
+
+    .body, html{
+        scroll-padding-top: 0;
+    }
+
+    /*Шапка*/
+    .header__burger{
+        display: none;
+    }
+
+    .header__menu{
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        float: right;
+        top: 0;
+    }
+
+    .header__list{
+        flex-direction: row;
+    }
+
+    .header__list li{
+        list-style: none;
+        margin: 38px 0px 0px 20px;
+    }
+
+    .header__link:hover{
+        color: rgba(255, 255, 255, 0.7);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-bottom: 3px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+
+    /*Достопримечательности*/
+    .showplace{
+        background-color: #E5E5E5;
+        display: block;
+        position: static;
+    }
+
+    .showplace__title{
+        margin-top: 0;
+        padding-top: 90px;
+        padding-bottom: 15px;
+    }
+
+    .showplace__items{
+        padding-bottom: 100px;
+    }
+
+    .showplace__item {
+        display: flex;
+        position: static;
+        height: 297px;
+        padding-top: 50px;
+    }
+
+    .showplace__img-container{
+        width: 380px;
+        height: 297px;
+        overflow: visible;
+    }
+
+    .showplace__img-container-mobile{
+        display: none;
+    }
+
+    .showplace__img-container-right{
+        display: flex;
+        width: 380px;
+        height: 297px;
+        overflow: visible;
+    }
+    
+    .showplace__img{
+        width: 380px;
+        height: 297px;
+        border-radius: 20px;
+        float: left;
+    }
+
+    .showplace-contener-content{
+        width: auto;
+        overflow: auto;
+        padding-left: 20px;
+    }
+    
+    .showplace__item-title{
+        margin: 0;
+    }
+
+    .showplace__text{
+        margin: 24px 100px 0px 0px;
+    }
+    
+    .showplace__text2{
+        display: flex;
+        margin: 16px 100px 0px 0px;
+        position: relative;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        text-align: left;
+    }
+
+
+    /*Туры*/
+    .tours__title{
+        padding-top: 90px;
+        margin: 0;
+    }
+
+    .tours__items{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .tours__item{
+        width: 380px;
+        height: 380px;
+        display: inline-block;
+        text-align: start;
+        margin: 12px 10px 12px 12px;
+    }
+
+    .tours__item--hidden{
+        display: inline-block;
+    }
+
+    .tours__more{
+        display: none;
+    }
+
+
+    /*Контакты*/
+    .contacts{
+        background-color: #E5E5E5;
+    }
+    .container2{
+    width: 35%;
+    float: left;
+    }
+
+    .contacts__text__title{
+        padding-top: 68px;
+        margin: 0;
+    }
+
+    .contacts__text__1{
+        margin: 68px 31px 20px 70px;
+    }
+    .contacts__text__3{
+        overflow: auto;
+    }
+   
+    .map{
+    padding: 30px 0 70px 0;
+    }
+
+
+    /*Подвал*/
+    .footer{
+        height: 271px;
+        display: block;
+    }
+
+    .footer__mobile{
+        display: none;
+    }
+
+    .footer__desktop{
+        display: flex;
+    }
+
+    .footer__text{
+    font-weight: 700;
+    margin: 35px 0px 21px 0px;
+    }
+
+    /*Меню подвала*/
+    .footer_conteiner_menu{
+        height: 271px;
+        width: 201px;
+    }
+
+    .footer__menu__list{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer__menu__list li{
+        list-style: none;
+        margin: 0px 42px 10px 0px;
+    }
+
+    .footer__menu__link{
+        color: #ffffff;
+        font-size: 14px;
+        font-family: Roboto;
+        line-height: 16px;
+        text-decoration: none;
+        font-weight: 200;
+    }
+
+    .footer__menu__link:hover{
+        padding-bottom: 3px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    }
+
+    /*Контакты подвала*/
+    .footer_conteiner_contacts{
+        height: 271px;
+        width: 50%;
+        overflow: auto;
+    }
+
+    .footer__text2{
+        font-weight: normal;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        margin: 0px 100px 0px 0px;
+
+        color: #e1e1e1;
+    }
+
+    /*Инфо подвала*/
+    .footer_conteiner_info{
+        height: 271px;
+        width: 50%;
+    }
+
+    .footer__text3{
+        font-weight: normal;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        margin: 35px 0px 0px 0px;
+        float: right;
+
+        color: #fff;
+    }
 }

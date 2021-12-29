@@ -15,37 +15,41 @@
     
     <!-- Шапка -->
     <header class="header" id="header">
-        <a href="#section_1" class="header__logo"></a>
-        <button class="header__burger" type="button" id="bm" onclick="onClickMenu();">
-            <span></span>
-        </button>
-        <nav class="header__menu" id="hm">
-            <ul class="header__list">
-                <li>
-                    <a href="#section_1" class="header__link" onclick="onClickLink();">Главная</a>
-                </li>
-                <li>
-                    <a href="#section_2" class="header__link" onclick="onClickLink();">Достопримечательности</a>
-                </li>
-                <li>
-                    <a href="#section_3" class="header__link" onclick="onClickLink();">Туры</a>
-                </li>
-                <li>
-                    <a href="#section_4" class="header__link" onclick="onClickLink();">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container1">
+            <a href="#section_1" class="header__logo"></a>
+            <button class="header__burger" type="button" id="bm" onclick="onClickMenu();">
+                <span></span>
+            </button>
+            <nav class="header__menu" id="hm">
+                <ul class="header__list">
+                    <li>
+                      <a href="#section_1" class="header__link" onclick="onClickLink();">Главная</a>
+                   </li>
+                    <li>
+                        <a href="#section_2" class="header__link" onclick="onClickLink();">Достопримечательности</a>
+                    </li>
+                    <li>
+                        <a href="#section_3" class="header__link" onclick="onClickLink();">Туры</a>
+                    </li>
+                    <li>
+                        <a href="#section_4" class="header__link" onclick="onClickLink();">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Главная страница -->
     <section class="wp" id="section_1">
-        <div class="wp__content">
-            <div class="wp__title">
-                <h1 class="wp__title__1">ХАКАСИЯ</h1>
-                <p class="wp__title__2">Туристическое Агенство Республики Хакасия</p>
-            </div>
-            <div>
-                <a href="#section_2" class="buttonNextContent"></a>
+        <div class="container1">
+            <div class="wp__content">
+                <div class="wp__title">
+                    <h1 class="wp__title__1">ХАКАСИЯ</h1>
+                    <p class="wp__title__2">Туристическое Агенство Республики Хакасия</p>
+                </div>
+                <div>
+                    <a href="#section_2" class="buttonNextContent"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -63,24 +67,36 @@
                     <div class="showplace__img-container">
                         <img class="showplace__img" src="img/showplace.jpg" alt="вид на хакасию" />
                     </div>
-                    <h3 class="showplace__item-title">Тропа предков</h3>
-                    <div class="showplace__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum integer. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi est sit amet facilisis magna etiam tempor. Egestas diam in arcu cursus euismod quis viverra nibh. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Vel risus commodo viverra maecenas accumsan. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Id aliquet risus feugiat in. Sed enim ut sem viverra aliquet eget.</div>
+                    <div class="showplace-contener-content">
+                        <h3 class="showplace__item-title">Тропа предков</h3>
+                        <p class="showplace__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum integer. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi est sit amet facilisis magna etiam tempor. Egestas diam in arcu cursus euismod quis viverra nibh. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Vel risus commodo viverra maecenas accumsan. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Id aliquet risus feugiat in. Sed enim ut sem viverra aliquet eget.</p>
+                        <p class="showplace__text2">Fusce eget mauris ullamcorper mi fermentum ullamcorper. Donec egestas mollis dolor, a dignissim dolor venenatis eu. Suspendisse quis quam laoreet, mattis neque eu, feugiat lectus. Maecenas non urna mollis, ultricies eros vel, ullamcorper risus. Nulla hendrerit venenatis erat, in rhoncus quam placerat nec. Ut feugiat nisi in mattis lacinia. Morbi eleifend, neque eget dapibus scelerisque, ligula nisl malesuada odio, et imperdiet metus mi pretium enim.</p>
+                    </div>
                 </div>
-
+                
+                <div class="showplace__item">
+                    <div class="showplace__img-container-mobile">
+                        <img class="showplace__img" src="img/showplace.jpg" alt="вид на хакасию" />
+                    </div>
+                    <div class="showplace-contener-content">
+                        <h3 class="showplace__item-title">Приисковый</h3>
+                        <p class="showplace__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum integer. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi est sit amet facilisis magna etiam tempor. Egestas diam in arcu cursus euismod quis viverra nibh. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Vel risus commodo viverra maecenas accumsan. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Id aliquet risus feugiat in. Sed enim ut sem viverra aliquet eget.</p>
+                        <p class="showplace__text2">Fusce eget mauris ullamcorper mi fermentum ullamcorper. Donec egestas mollis dolor, a dignissim dolor venenatis eu. Suspendisse quis quam laoreet, mattis neque eu, feugiat lectus. Maecenas non urna mollis, ultricies eros vel, ullamcorper risus. Nulla hendrerit venenatis erat, in rhoncus quam placerat nec. Ut feugiat nisi in mattis lacinia. Morbi eleifend, neque eget dapibus scelerisque, ligula nisl malesuada odio, et imperdiet metus mi pretium enim.</p>
+                    </div>
+                    <div class="showplace__img-container-right">
+                        <img class="showplace__img" src="img/showplace.jpg" alt="вид на хакасию" />
+                    </div>
+                </div>
+                
                 <div class="showplace__item">
                     <div class="showplace__img-container">
                         <img class="showplace__img" src="img/showplace.jpg" alt="вид на хакасию" />
                     </div>
-                    <h3 class="showplace__item-title">Приисковый</h3>
-                    <div class="showplace__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum integer. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi est sit amet facilisis magna etiam tempor. Egestas diam in arcu cursus euismod quis viverra nibh. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Vel risus commodo viverra maecenas accumsan. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Id aliquet risus feugiat in. Sed enim ut sem viverra aliquet eget.</div>
-                </div>
-            
-                <div class="showplace__item">
-                    <div class="showplace__img-container">
-                        <img class="showplace__img" src="img/showplace.jpg" alt="вид на хакасию" />
+                    <div class="showplace-contener-content">
+                        <h3 class="showplace__item-title">Сундуки</h3>
+                        <p class="showplace__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum integer. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi est sit amet facilisis magna etiam tempor. Egestas diam in arcu cursus euismod quis viverra nibh. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Vel risus commodo viverra maecenas accumsan. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Id aliquet risus feugiat in. Sed enim ut sem viverra aliquet eget.</p>
+                        <p class="showplace__text2">Fusce eget mauris ullamcorper mi fermentum ullamcorper. Donec egestas mollis dolor, a dignissim dolor venenatis eu. Suspendisse quis quam laoreet, mattis neque eu, feugiat lectus. Maecenas non urna mollis, ultricies eros vel, ullamcorper risus. Nulla hendrerit venenatis erat, in rhoncus quam placerat nec. Ut feugiat nisi in mattis lacinia. Morbi eleifend, neque eget dapibus scelerisque, ligula nisl malesuada odio, et imperdiet metus mi pretium enim.</p>
                     </div>
-                    <h3 class="showplace__item-title">Сундуки</h3>
-                    <div class="showplace__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum integer. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi est sit amet facilisis magna etiam tempor. Egestas diam in arcu cursus euismod quis viverra nibh. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Vel risus commodo viverra maecenas accumsan. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Id aliquet risus feugiat in. Sed enim ut sem viverra aliquet eget.</div>
                 </div>
             </div>
         </div>    
@@ -123,6 +139,37 @@
                         <button type="button" class="tours__item-button">Купить</button>  
                     </div> 
                 </div>
+
+                <div class="tours__item tours__item--hidden"> 
+                    <img src="img/tour.jpg" alt="Вид на Хакассию" class="tours__item-img">
+                    <div class="tours__item-gradient">             
+                        <h3 class="tours__item-title">Название</h3>
+                        <p class="tours__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero distinctio, cum vel ipsa ut!</p>                    
+                        <p class="tours__item-price">От <b>10 000</b> р.</p>
+                        <button type="button" class="tours__item-button">Купить</button>  
+                    </div> 
+                </div>
+
+                <div class="tours__item tours__item--hidden"> 
+                    <img src="img/tour.jpg" alt="Вид на Хакассию" class="tours__item-img">
+                    <div class="tours__item-gradient">             
+                        <h3 class="tours__item-title">Название</h3>
+                        <p class="tours__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero distinctio, cum vel ipsa ut!</p>                    
+                        <p class="tours__item-price">От <b>10 000</b> р.</p>
+                        <button type="button" class="tours__item-button">Купить</button>  
+                    </div> 
+                </div>
+
+                <div class="tours__item tours__item--hidden"> 
+                    <img src="img/tour.jpg" alt="Вид на Хакассию" class="tours__item-img">
+                    <div class="tours__item-gradient">             
+                        <h3 class="tours__item-title">Название</h3>
+                        <p class="tours__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero distinctio, cum vel ipsa ut!</p>                    
+                        <p class="tours__item-price">От <b>10 000</b> р.</p>
+                        <button type="button" class="tours__item-button">Купить</button>  
+                    </div> 
+                </div>
+                
                 <div class="tours__more">
                     <button type="button" class="btn btn--toggle-items">Больше туров</button>
                 </div>
@@ -132,32 +179,73 @@
 
     <!-- Контакты-->
     <section class="contacts" id="section_4">
-        <div class="contacts__text">
-            <h2 class="contacts__text__title">Контакты</h2>
-        </div>
-        <div class="contacts__text">
-            <div class="contacts__img-adres"></div>
-            <p class="contacts__text__1">655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67</p>
-        </div>
-        <div class="contacts__text">
-            <div class="contacts__img-phon"></div>
-            <p class="contacts__text__2">8 (3902) 22-53-35</p> 
-            <p class="contacts__text__3">8 (3902) 24-30-71</p>
-        </div>
-        <div class="contacts__text">
-            <div class="contacts__img-mail"></div>
-            <p class="contacts__text__3">kancler@vskhakasia.ru</p>
-        </div>
-        <div class="map">
-            <div style="position:relative;overflow:hidden;">
-                <a href="https://yandex.ru/maps/1095/abakan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Абакан</a><a href="https://yandex.ru/maps/1095/abakan/house/prospekt_lenina_67/bUgYcgNiS0cBQFtpfXtzcHpnZg==/?ll=91.444583%2C53.721019&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=16.99" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Ленина, 67 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUub8Q5pB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        <div class="container1">
+            <div class="contacts__text">
+                <h2 class="contacts__text__title">Контакты</h2>
+            </div>
+            <div class="container2">    
+                <div class="contacts__text">
+                    <div class="contacts__img-adres"></div>
+                    <p class="contacts__text__1">655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67</p>
+                </div>
+                <div class="contacts__text">
+                    <div class="contacts__img-phon"></div>
+                    <p class="contacts__text__2">8 (3902) 22-53-35</p> 
+                    <p class="contacts__text__3">8 (3902) 24-30-71</p>
+                </div>
+                <div class="contacts__text">
+                    <div class="contacts__img-mail"></div>
+                    <p class="contacts__text__3">kancler@vskhakasia.ru</p>
+                </div>
+            </div>
+            <div class="map">
+                <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/1095/abakan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Абакан</a><a href="https://yandex.ru/maps/1095/abakan/house/prospekt_lenina_67/bUgYcgNiS0cBQFtpfXtzcHpnZg==/?ll=91.444583%2C53.721019&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=16.99" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Ленина, 67 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUub8Q5pB" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Подвал -->
     <footer class="footer">
-        <p class="footer__text">Официальный сайт Агенства Туризма Республики Хакасия © 2021</p>
+
+        <div class="container1">
+
+            <div class="footer__mobile">
+                <p class="footer__text">Официальный сайт Агенства Туризма Республики Хакасия © 2021</p>
+            </div>
+
+            <div class="footer__desktop">
+                <div class="footer_conteiner_menu">
+                    <h2 class="footer__text">Меню</h2>
+                    <nav class="footer__menu">
+                        <ul class="footer__menu__list">
+                            <li>
+                              <a href="#section_1" class="footer__menu__link">Главная</a>
+                           </li>
+                            <li>
+                                <a href="#section_2" class="footer__menu__link">Достопримечательности</a>
+                            </li>
+                            <li>
+                                <a href="#section_3" class="footer__menu__link">Туры</a>
+                            </li>
+                            <li>
+                                <a href="#section_4" class="footer__menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer_conteiner_contacts">
+                    <h2 class="footer__text">Контакты</h2>
+                    <p class="footer__text2">655019, Республика Хакасия, г. Абакан, пр. Ленина, д. 67</p>
+                    <p class="footer__text2">Справочная служба: 8 (3902) 22-53-35, факс: 8 (3902) 24-30-71</p>
+                    <p class="footer__text2">Электронная почта: kancler@vskhakasia.ru</p>
+                </div>
+                <div class="footer_conteiner_info">
+                    <p class="footer__text3">Официальный сайт Агенства Туризма Республики Хакасия  ©  2021</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
